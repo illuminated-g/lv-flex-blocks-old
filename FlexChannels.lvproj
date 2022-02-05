@@ -11,13 +11,12 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Demo.vi" Type="VI" URL="../Channels/Flex/Demo.vi"/>
-		<Item Name="Flex.lvlib" Type="Library" URL="../Channels/Flex/Flex.lvlib"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="_ChannelSupport.lvlib" Type="Library" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/_ChannelSupport.lvlib"/>
-			<Item Name="ChannelProbePositionAndTitle.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbePositionAndTitle.vi"/>
-			<Item Name="ChannelProbeWindowStagger.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbeWindowStagger.vi"/>
+		<Item Name="Examples" Type="Folder">
+			<Item Name="Flex Readers Demo.vi" Type="VI" URL="../Channels/Examples/Flex Readers Demo.vi"/>
+			<Item Name="Monitor Demo.vi" Type="VI" URL="../Channels/Examples/Monitor Demo.vi"/>
 		</Item>
+		<Item Name="Flex.lvlib" Type="Library" URL="../Channels/Flex/Flex.lvlib"/>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
