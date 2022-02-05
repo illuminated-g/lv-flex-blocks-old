@@ -10,7 +10,7 @@
 	<Property Name="Enable Alarms Logging" Type="Bool">true</Property>
 	<Property Name="Enable Data Logging" Type="Bool">true</Property>
 	<Property Name="Localized" Type="Str">Localize</Property>
-	<Property Name="NI.Lib.Description" Type="Str">&lt;b&gt;DSPCable Route&lt;/b&gt;s are a flexible communication channel where each consumer decides which mechanism it needs: notifier-like (tag) or queue-like (stream) behavior. Due to this flexibility, it is possible that a consumer's performance may impact other consumers and are likely to impact the producer's performance.</Property>
+	<Property Name="NI.Lib.Description" Type="Str">&lt;b&gt;FlexChannels&lt;/b&gt;s are a flexible communication channel where each consumer decides which mechanism it needs: notifier-like (tag) or queue-like (stream) behavior. Due to this flexibility, it is possible that a consumer's performance may impact other consumers and are likely to impact the producer's performance.</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*V!!!*Q(C=\:1R;FN"%)&lt;`")GEV1W#3+=G-"&gt;QI3PI#H-&amp;N9+EU"7G5SX?$639&gt;#HG#A+4!YB5+A3W]OV[^@2MH-[""$TLE&gt;`\:X&lt;G?\P,3N5_3C/&gt;HVH8&gt;5^@0D&gt;L$^WR'^CRR7PW*8\M\2)`$_&lt;0BP&amp;:6[9^$(IAT8KL]3@W5PR;`((_K&lt;&gt;7`ZJ!`$3-H`LPOXQ!UM#O]:*2YVX8+_6&amp;&lt;`:G`\?NHN]"@\+`B`"/Z3,#%Q`==6.J?5\U2%`U2%`U2!`U1!`U1!`U1(&gt;U2X&gt;U2X&gt;U2T&gt;U1T&gt;U1T&gt;U1[]$8?B#&amp;TJ)3@/E56)U+:!EA[,E*_&amp;*?"+?B)&gt;8*4Q*4]+4]#1]J#DB38A3HI1HY7';%J[%*_&amp;*?")?3F73L!-&gt;HI3(]AJY!J[!*_!*?'CJA#=!#*I&amp;B9-C9#A)"A]"4]!4]0#IA#@A#8A#HI#(M!+?A#@A#8A#(K&lt;569F+5Q9[0*32Q_0Q/$Q/D].$;4E]$I`$Y`!Y0,34Q_0Q/""/1[=Y#()G/1H/C]0D]0"0$I`$Y`!Y0!Y0I&lt;J$8F?GU*3"$I`"9`!90!;0Q5-*'4Q'D]&amp;D]"A]F*8"9`!90!;0Q5-L'4Q'D]&amp;DA"B.;3_DG$(23$)%AY?`?FKM\F*5%KN$;I&gt;8\6#K(4;V1[2W/.1W87UTV4:*&lt;@(6&amp;F6NM&gt;171?XDV+$69.3;K%UOC4LQO]&gt;X_":@YUN]A=`R+4YJ5V]Z]8!Y;,`@;\@&lt;;&lt;P&gt;;LV?;\F=;L&amp;9;$[@;TK&gt;;D+:^.@!*U:`)4T?3[O&lt;W`OP&gt;ZPRNZP._-&gt;I-TY`&lt;-9`2\@XXVH@V3`]S^W(6\G#8L:`Y'\5?QXLMU;`!7JHAP=!!!!!</Property>
 	<Property Name="NI.Lib.LocalName" Type="Str">Flex</Property>
@@ -46,6 +46,7 @@
 		<Item Name="Data Types" Type="Folder">
 			<Item Name="Channel Data.ctl" Type="VI" URL="../Channel Data.ctl"/>
 			<Item Name="ChannelOp.ctl" Type="VI" URL="../ChannelOp.ctl"/>
+			<Item Name="Element Info.ctl" Type="VI" URL="../Element Info.ctl"/>
 		</Item>
 		<Item Name="Ops" Type="Folder">
 			<Item Name="Init Channel.vi" Type="VI" URL="../Init Channel.vi"/>
@@ -55,10 +56,7 @@
 			<Item Name="Publish Element.vi" Type="VI" URL="../Publish Element.vi"/>
 		</Item>
 		<Item Name="))Channel.vi" Type="VI" URL="../))Channel.vi"/>
-		<Item Name="EndpointRead.vi" Type="VI" URL="../EndpointRead.vi"/>
-		<Item Name="Channel Probe.vi" Type="VI" URL="../Channel Probe.vi"/>
-		<Item Name="Wire Probe.vi" Type="VI" URL="../Wire Probe.vi"/>
-		<Item Name="TagData.lvclass" Type="LVClass" URL="../TagData.lvclass"/>
+		<Item Name="Check Room in Queues.vi" Type="VI" URL="../Check Room in Queues.vi"/>
 	</Item>
 	<Item Name="Public" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
@@ -69,6 +67,7 @@
 		<Item Name="ReadEndpoints" Type="Folder">
 			<Item Name="Read Lossy.vi" Type="VI" URL="../Read Lossy.vi"/>
 			<Item Name="Read Lossless.vi" Type="VI" URL="../Read Lossless.vi"/>
+			<Item Name="Read Status.vi" Type="VI" URL="../Read Status.vi"/>
 		</Item>
 		<Item Name="WriteEndpoints" Type="Folder">
 			<Item Name="Write.vi" Type="VI" URL="../Write.vi"/>
