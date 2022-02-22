@@ -39,39 +39,74 @@
 	<Item Name="_Callbacks" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
 	</Item>
-	<Item Name="Community" Type="Folder">
-		<Property Name="NI.LibItem.Scope" Type="Int">4</Property>
-		<Item Name="Data Types" Type="Folder">
-			<Item Name="Allowed Wires.ctl" Type="VI" URL="../Allowed Wires.ctl"/>
-			<Item Name="Calculated Sizes.ctl" Type="VI" URL="../Calculated Sizes.ctl"/>
-			<Item Name="Command.ctl" Type="VI" URL="../Command.ctl"/>
-			<Item Name="Errors.ctl" Type="VI" URL="../Errors.ctl"/>
-			<Item Name="Menu Action.ctl" Type="VI" URL="../Menu Action.ctl"/>
-			<Item Name="Size Constants.ctl" Type="VI" URL="../Size Constants.ctl"/>
-			<Item Name="Special Terminal Indices.ctl" Type="VI" URL="../Special Terminal Indices.ctl"/>
-			<Item Name="Special Terminal.ctl" Type="VI" URL="../Special Terminal.ctl"/>
-			<Item Name="Terminal Direction.ctl" Type="VI" URL="../Terminal Direction.ctl"/>
-			<Item Name="Terminal State.ctl" Type="VI" URL="../Terminal State.ctl"/>
-			<Item Name="Type Descriptor.ctl" Type="VI" URL="../Type Descriptor.ctl"/>
-			<Item Name="Value Mode.ctl" Type="VI" URL="../Value Mode.ctl"/>
-		</Item>
-		<Item Name="SM Support" Type="Folder">
-			<Item Name="Init Block.vi" Type="VI" URL="../Init Block.vi"/>
-			<Item Name="SM Template.vit" Type="VI" URL="../SM Template.vit"/>
-			<Item Name="Start Block Status.vi" Type="VI" URL="../Start Block Status.vi"/>
-			<Item Name="Update Block Status.vi" Type="VI" URL="../Update Block Status.vi"/>
-		</Item>
-		<Item Name="XNode Support" Type="Folder"/>
-		<Item Name="Class Path to Variant.vi" Type="VI" URL="../Class Path to Variant.vi"/>
-		<Item Name="Top Level VI Name.vi" Type="VI" URL="../Top Level VI Name.vi"/>
-		<Item Name="Variant To String.vi" Type="VI" URL="../Variant To String.vi"/>
-	</Item>
 	<Item Name="Private" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		<Item Name="ConnectionScripting" Type="Folder">
 			<Item Name="Set Class Color.vi" Type="VI" URL="../Set Class Color.vi"/>
 		</Item>
-		<Item Name="Data Types" Type="Folder"/>
+		<Item Name="Data Types" Type="Folder">
+			<Item Name="Execution Event.ctl" Type="VI" URL="../Execution Event.ctl"/>
+			<Item Name="Grouped Terminals.ctl" Type="VI" URL="../Grouped Terminals.ctl"/>
+			<Item Name="Registration Data.ctl" Type="VI" URL="../Registration Data.ctl"/>
+			<Item Name="Scripting Refs.ctl" Type="VI" URL="../Scripting Refs.ctl"/>
+			<Item Name="Terminal Group.ctl" Type="VI" URL="../Terminal Group.ctl"/>
+			<Item Name="UI State.ctl" Type="VI" URL="../UI State.ctl"/>
+			<Item Name="Worker Block.ctl" Type="VI" URL="../Worker Block.ctl"/>
+		</Item>
+		<Item Name="Editors" Type="Folder">
+			<Item Name="Build Existing Panel Map.vi" Type="VI" URL="../Build Existing Panel Map.vi"/>
+		</Item>
+		<Item Name="Execution" Type="Folder">
+			<Item Name="Create Execution.vi" Type="VI" URL="../Create Execution.vi"/>
+			<Item Name="Execution Manager Async.vi" Type="VI" URL="../Execution Manager Async.vi"/>
+		</Item>
+		<Item Name="Interfaces" Type="Folder">
+			<Item Name="New Worker Name UI.vi" Type="VI" URL="../New Worker Name UI.vi"/>
+			<Item Name="Worker List UI.vi" Type="VI" URL="../Worker List UI.vi"/>
+		</Item>
+		<Item Name="Scripting" Type="Folder">
+			<Item Name="Template" Type="Folder">
+				<Item Name="Endpoints" Type="Folder">
+					<Item Name="Create Control Ref Endpoint.vi" Type="VI" URL="../Create Control Ref Endpoint.vi"/>
+					<Item Name="Create Source Endpoints.vi" Type="VI" URL="../Create Source Endpoints.vi"/>
+					<Item Name="Create Work Channel Endpoint.vi" Type="VI" URL="../Create Work Channel Endpoint.vi"/>
+					<Item Name="Create Work Endpoints.vi" Type="VI" URL="../Create Work Endpoints.vi"/>
+					<Item Name="Create Write Endpoint.vi" Type="VI" URL="../Create Write Endpoint.vi"/>
+				</Item>
+				<Item Name="Terminals" Type="Folder">
+					<Item Name="Arrange Init Terminals.vi" Type="VI" URL="../Arrange Init Terminals.vi"/>
+					<Item Name="Arrange Source Terminals.vi" Type="VI" URL="../Arrange Source Terminals.vi"/>
+					<Item Name="Arrange Work Terminals.vi" Type="VI" URL="../Arrange Work Terminals.vi"/>
+					<Item Name="Create Channel Terminal.vi" Type="VI" URL="../Create Channel Terminal.vi"/>
+					<Item Name="Create Value Terminal.vi" Type="VI" URL="../Create Value Terminal.vi"/>
+					<Item Name="Group Terminals.vi" Type="VI" URL="../Group Terminals.vi"/>
+					<Item Name="Script Init Values.vi" Type="VI" URL="../Script Init Values.vi"/>
+				</Item>
+				<Item Name="Copy Template to Express VI.vi" Type="VI" URL="../Copy Template to Express VI.vi"/>
+				<Item Name="Create Express VI Terminals.vi" Type="VI" URL="../Create Express VI Terminals.vi"/>
+				<Item Name="Position Terminals.vi" Type="VI" URL="../Position Terminals.vi"/>
+				<Item Name="Replace Template Items.vi" Type="VI" URL="../Replace Template Items.vi"/>
+				<Item Name="Script Work CBR.vi" Type="VI" URL="../Script Work CBR.vi"/>
+			</Item>
+			<Item Name="Collect Refs.vi" Type="VI" URL="../Collect Refs.vi"/>
+			<Item Name="Copy Block Diagram.vi" Type="VI" URL="../Copy Block Diagram.vi"/>
+			<Item Name="CopyLibraryNoShift.vi" Type="VI" URL="../CopyLibraryNoShift.vi"/>
+			<Item Name="Execution Context.vi" Type="VI" URL="../Execution Context.vi"/>
+			<Item Name="GetOrCreateFlexChannel.vi" Type="VI" URL="../GetOrCreateFlexChannel.vi"/>
+			<Item Name="GetOrMakeSpecialization.vi" Type="VI" URL="../GetOrMakeSpecialization.vi"/>
+			<Item Name="Output CS Refs.vi" Type="VI" URL="../Output CS Refs.vi"/>
+			<Item Name="Set Use Default Value.vi" Type="VI" URL="../Set Use Default Value.vi"/>
+			<Item Name="Type String.vi" Type="VI" URL="../Type String.vi"/>
+			<Item Name="Vertical Spacing.vi" Type="VI" URL="../Vertical Spacing.vi"/>
+			<Item Name="Worker CS Refs.vi" Type="VI" URL="../Worker CS Refs.vi"/>
+		</Item>
+		<Item Name="TypeDesc" Type="Folder">
+			<Item Name="Build Values Tree.vi" Type="VI" URL="../Build Values Tree.vi"/>
+			<Item Name="Expand Special Cluster.vi" Type="VI" URL="../Expand Special Cluster.vi"/>
+			<Item Name="Get Types for Worker.vi" Type="VI" URL="../Get Types for Worker.vi"/>
+			<Item Name="Sort Types.vi" Type="VI" URL="../Sort Types.vi"/>
+			<Item Name="Variant To Type.vi" Type="VI" URL="../Variant To Type.vi"/>
+		</Item>
 		<Item Name="Scratchpad.vi" Type="VI" URL="../Scratchpad.vi"/>
 	</Item>
 	<Item Name="Properties" Type="Folder"/>
@@ -81,12 +116,72 @@
 	<Item Name="Public" Type="Folder">
 		<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
 		<Item Name="Data Types" Type="Folder">
+			<Item Name="Allowed Wires.ctl" Type="VI" URL="../Allowed Wires.ctl"/>
 			<Item Name="Block State.ctl" Type="VI" URL="../Block State.ctl"/>
 			<Item Name="Block Status with Error.ctl" Type="VI" URL="../Block Status with Error.ctl"/>
 			<Item Name="Block Status.ctl" Type="VI" URL="../Block Status.ctl"/>
+			<Item Name="Calculated Sizes.ctl" Type="VI" URL="../Calculated Sizes.ctl"/>
+			<Item Name="Command.ctl" Type="VI" URL="../Command.ctl"/>
+			<Item Name="Errors.ctl" Type="VI" URL="../Errors.ctl"/>
+			<Item Name="Execution Event Action.ctl" Type="VI" URL="../Execution Event Action.ctl"/>
+			<Item Name="Execution Event Data.ctl" Type="VI" URL="../Execution Event Data.ctl"/>
+			<Item Name="Express Config State.ctl" Type="VI" URL="../Express Config State.ctl"/>
+			<Item Name="Extra Specialization Scripting VI Type.vi" Type="VI" URL="../Extra Specialization Scripting VI Type.vi"/>
+			<Item Name="Lossless Terminal Index.ctl" Type="VI" URL="../Lossless Terminal Index.ctl"/>
+			<Item Name="Lossy Terminal Index.ctl" Type="VI" URL="../Lossy Terminal Index.ctl"/>
+			<Item Name="Menu Action.ctl" Type="VI" URL="../Menu Action.ctl"/>
+			<Item Name="Paths.ctl" Type="VI" URL="../Paths.ctl"/>
 			<Item Name="Run Action.ctl" Type="VI" URL="../Run Action.ctl"/>
+			<Item Name="Size Constants.ctl" Type="VI" URL="../Size Constants.ctl"/>
+			<Item Name="Special Terminal Indices.ctl" Type="VI" URL="../Special Terminal Indices.ctl"/>
+			<Item Name="Special Terminal.ctl" Type="VI" URL="../Special Terminal.ctl"/>
+			<Item Name="Status Terminal Index.ctl" Type="VI" URL="../Status Terminal Index.ctl"/>
+			<Item Name="Terminal Config.ctl" Type="VI" URL="../Terminal Config.ctl"/>
+			<Item Name="Terminal Direction.ctl" Type="VI" URL="../Terminal Direction.ctl"/>
+			<Item Name="Terminal Mode.ctl" Type="VI" URL="../Terminal Mode.ctl"/>
+			<Item Name="Terminal State.ctl" Type="VI" URL="../Terminal State.ctl"/>
+			<Item Name="Type Descriptor.ctl" Type="VI" URL="../Type Descriptor.ctl"/>
+			<Item Name="Value Mode.ctl" Type="VI" URL="../Value Mode.ctl"/>
 			<Item Name="Worker Action.ctl" Type="VI" URL="../Worker Action.ctl"/>
+			<Item Name="Write Terminal Index.ctl" Type="VI" URL="../Write Terminal Index.ctl"/>
 		</Item>
+		<Item Name="Execution" Type="Folder">
+			<Item Name="Report Execution Error.vi" Type="VI" URL="../Report Execution Error.vi"/>
+			<Item Name="Start Execution.vi" Type="VI" URL="../Start Execution.vi"/>
+		</Item>
+		<Item Name="Scripting" Type="Folder">
+			<Item Name="Script Express VI.vi" Type="VI" URL="../Script Express VI.vi"/>
+			<Item Name="SM Template.vit" Type="VI" URL="../SM Template.vit"/>
+			<Item Name="Traverse for BD Refs.vi" Type="VI" URL="../Traverse for BD Refs.vi"/>
+		</Item>
+		<Item Name="Value Editors" Type="Folder">
+			<Item Name="Editor Folder.vi" Type="VI" URL="../Editor Folder.vi"/>
+			<Item Name="Editor for Type.vi" Type="VI" URL="../Editor for Type.vi"/>
+			<Item Name="GetOrMakeSpecializedEditor.vi" Type="VI" URL="../GetOrMakeSpecializedEditor.vi"/>
+			<Item Name="Init Editor Panels.vi" Type="VI" URL="../Init Editor Panels.vi"/>
+			<Item Name="Panel to Terminal Configs.vi" Type="VI" URL="../Panel to Terminal Configs.vi"/>
+			<Item Name="Sort Editors.vi" Type="VI" URL="../Sort Editors.vi"/>
+			<Item Name="String to Variant.vi" Type="VI" URL="../String to Variant.vi"/>
+			<Item Name="Variant To String.vi" Type="VI" URL="../Variant To String.vi"/>
+		</Item>
+		<Item Name="Workers" Type="Folder">
+			<Item Name="SM Support" Type="Folder">
+				<Item Name="Init Block.vi" Type="VI" URL="../Init Block.vi"/>
+				<Item Name="Start Block Status.vi" Type="VI" URL="../Start Block Status.vi"/>
+				<Item Name="Top Level VI Name.vi" Type="VI" URL="../Top Level VI Name.vi"/>
+				<Item Name="Update Block Status.vi" Type="VI" URL="../Update Block Status.vi"/>
+			</Item>
+			<Item Name="Available Workers.vi" Type="VI" URL="../Available Workers.vi"/>
+			<Item Name="Control Ref Value.vim" Type="VI" URL="../Control Ref Value.vim"/>
+			<Item Name="Generate Worker Info.vi" Type="VI" URL="../Generate Worker Info.vi"/>
+			<Item Name="Launch Workers List.vi" Type="VI" URL="../Launch Workers List.vi"/>
+			<Item Name="Make New Worker.vi" Type="VI" URL="../Make New Worker.vi"/>
+			<Item Name="Worker Name and Path.vi" Type="VI" URL="../Worker Name and Path.vi"/>
+		</Item>
+		<Item Name="Autocomplete UI.vi" Type="VI" URL="../Autocomplete UI.vi"/>
+		<Item Name="Launch Autocomplete Handler.vi" Type="VI" URL="../Launch Autocomplete Handler.vi"/>
+		<Item Name="Paths.vi" Type="VI" URL="../Paths.vi"/>
+		<Item Name="Set VI FP Topmost.vi" Type="VI" URL="../Set VI FP Topmost.vi"/>
 		<Item Name="Stop Execution.vi" Type="VI" URL="../Stop Execution.vi"/>
 	</Item>
 </Library>
